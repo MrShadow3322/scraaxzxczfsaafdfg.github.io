@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#home {
+    display: block;
+}
+
+.balance {
+    background: linear-gradient(90deg, #333, #666);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin-top: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#walletAddress {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 10px 0;
+}
+
+.nav-button {
+    background: #222;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background: #444;
+}
+
+.hidden {
+    display: none;
+}
+
+#walletDisplay {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#walletDisplay span {
+    color: #ff6600;
+    font-weight: bold;
+}
